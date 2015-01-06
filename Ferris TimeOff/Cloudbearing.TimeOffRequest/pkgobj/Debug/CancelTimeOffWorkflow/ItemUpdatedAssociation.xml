@@ -1,0 +1,10 @@
+﻿<WorkflowAssociation xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>CancelTimeOffWorkflow - ItemUpdated</Description>
+  <DisplayName>CancelTimeOffWorkflow - ItemUpdated</DisplayName>
+  <Enabled>true</Enabled>
+  <EventSourceGUID>Lists/TimeOffRequests</EventSourceGUID>
+  <EventType>ItemUpdated</EventType>
+  <HistoryListId>Lists/WorkflowHistoryList</HistoryListId>
+  <Id>45e5ff30-7677-49bf-8c16-299de69abfa2</Id>
+  <TaskListId></TaskListId>
+</WorkflowAssociation>

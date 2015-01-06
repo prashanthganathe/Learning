@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="97732565-5565-41cb-bad8-2312be0832c0" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="Cloudbearing.TimeOffRequest_Feature1\Feature.xml" />
+    <FeatureManifest Location="Cloudbearing.TimeOffRequest_Feature2\Feature.xml" />
+  </FeatureManifests>
+</Solution>

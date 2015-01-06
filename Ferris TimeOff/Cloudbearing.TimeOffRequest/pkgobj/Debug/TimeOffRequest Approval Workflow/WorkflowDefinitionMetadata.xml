@@ -1,0 +1,7 @@
+﻿<WorkflowDefinition xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>My 'TimeOffRequest Approval Workflow' Workflow</Description>
+  <DisplayName>TimeOffRequest Approval Workflow</DisplayName>
+  <Id>f8cbf987-b439-4360-a984-99aa4fcdd5e1</Id>
+  <RestrictAssociationToId>Lists/TimeOffRequests</RestrictAssociationToId>
+  <RestrictAssociationToType>List</RestrictAssociationToType>
+</WorkflowDefinition>

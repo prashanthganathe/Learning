@@ -1,0 +1,9 @@
+obj\Debug\_Cloudbearing.TimeOffRequest.g.cs
+obj\Debug\Workflow.g.cs
+obj\Debug\Workflow.1.g.cs
+obj\Debug\Cloudbearing.TimeOffRequest.TimeOffRequest_Approval_Workflow_Workflow_BeforeInitializeComponentHelper.cs
+obj\Debug\_AssemblyInfo_c79ab6baa6e4460880d4ffd52cc51734.g.cs
+obj\Debug\Cloudbearing.TimeOffRequest.CancelTimeOffWorkflow_Workflow_BeforeInitializeComponentHelper.cs
+obj\Debug\_AssemblyInfo_41b71bc3894c4133aa94d41c7399eaeb.g.cs
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequest\obj\Debug\Cloudbearing.TimeOffRequest.TimeOffRequest_Approval_Workflow_Workflow_CompiledExpressionRoot.cs
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequest\obj\Debug\Cloudbearing.TimeOffRequest.CancelTimeOffWorkflow_Workflow_CompiledExpressionRoot.cs

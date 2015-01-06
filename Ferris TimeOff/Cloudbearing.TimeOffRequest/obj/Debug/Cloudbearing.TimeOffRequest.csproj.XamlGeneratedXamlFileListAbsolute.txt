@@ -1,0 +1,4 @@
+obj\Debug\Workflow.g.xaml
+obj\Debug\Workflow.1.g.xaml
+obj\Debug\Cloudbearing.TimeOffRequest.TimeOffRequest_Approval_Workflow_Workflow_BeforeInitializeComponentHelper.txt
+obj\Debug\Cloudbearing.TimeOffRequest.CancelTimeOffWorkflow_Workflow_BeforeInitializeComponentHelper.txt

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MOTIFWORKS</Machine>
+    <WindowsUser>mw-inspiron-001</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>c7011926-54d3-4e97-9d97-86cbae6ff2a4</PackageIdentityName>
+    <IntermediateOutputPath>E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Windows8Theme.exe">
+      <PackagePath>Windows8Theme.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\packages\AWSSDK.2.1.6.0\lib\windows8\AWSSDK.dll">
+      <PackagePath>AWSSDK.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\AcquirerReport.png">
+      <PackagePath>Assets\AcquirerReport.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Audience.png">
+      <PackagePath>Assets\Audience.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\doctor.png">
+      <PackagePath>Assets\doctor.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\download.png">
+      <PackagePath>Assets\download.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\et-background.png">
+      <PackagePath>Assets\et-background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\carl30.png">
+      <PackagePath>Assets\Images\carl30.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\splash.scale-100.png">
+      <PackagePath>Assets\Images\splash.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\pie.png">
+      <PackagePath>Assets\pie.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\reportqueue.png">
+      <PackagePath>Assets\reportqueue.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\request.png">
+      <PackagePath>Assets\request.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\upload.png">
+      <PackagePath>Assets\upload.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\user.png">
+      <PackagePath>Assets\user.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\users.png">
+      <PackagePath>Assets\users.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\wideLogo.png">
+      <PackagePath>Assets\wideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\BigLiveTile1.jpg">
+      <PackagePath>Assets\Images\BigLiveTile1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\BigLiveTile2.jpg">
+      <PackagePath>Assets\Images\BigLiveTile2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\carl150.jpg">
+      <PackagePath>Assets\Images\carl150.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\SmallLiveTile1.jpg">
+      <PackagePath>Assets\Images\SmallLiveTile1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\SmallLiveTile2.jpg">
+      <PackagePath>Assets\Images\SmallLiveTile2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\left.jpg">
+      <PackagePath>Assets\left.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\right.jpg">
+      <PackagePath>Assets\right.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\IsolatedStorageW8.dll">
+      <PackagePath>IsolatedStorageW8.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcqRepList.xbf">
+      <PackagePath>AcqRepList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcquirerHome.xbf">
+      <PackagePath>AcquirerHome.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ExpertsResponse.xbf">
+      <PackagePath>ExpertsResponse.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\PB.xbf">
+      <PackagePath>PB.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcqList.xbf">
+      <PackagePath>AcqList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\StatsNewDownload.xbf">
+      <PackagePath>StatsNewDownload.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\StatsNew.xbf">
+      <PackagePath>StatsNew.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Stats.xbf">
+      <PackagePath>Stats.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ReportQueue.xbf">
+      <PackagePath>ReportQueue.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UploadImageTransferUtility.xbf">
+      <PackagePath>UploadImageTransferUtility.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UsersList.xbf">
+      <PackagePath>UsersList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\RequestQueue.xbf">
+      <PackagePath>RequestQueue.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcReport.xbf">
+      <PackagePath>AcReport.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Response.xbf">
+      <PackagePath>Response.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ReportToAcq.xbf">
+      <PackagePath>ReportToAcq.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AddUser.xbf">
+      <PackagePath>AddUser.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UploadImage.xbf">
+      <PackagePath>UploadImage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ExpertHome.xbf">
+      <PackagePath>ExpertHome.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AudienceInfo.xbf">
+      <PackagePath>AudienceInfo.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AdminHome.xbf">
+      <PackagePath>AdminHome.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\ContactUs.xbf">
+      <PackagePath>SettingsFlyouts\ContactUs.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UserList.xbf">
+      <PackagePath>UserList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ItemSubPage.xbf">
+      <PackagePath>ItemSubPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\AboutUs.xbf">
+      <PackagePath>SettingsFlyouts\AboutUs.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\PrivacyPolicy.xbf">
+      <PackagePath>SettingsFlyouts\PrivacyPolicy.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\TermsAndConditions.xbf">
+      <PackagePath>SettingsFlyouts\TermsAndConditions.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Windows8Theme.xr.xml">
+      <PackagePath>Windows8Theme.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

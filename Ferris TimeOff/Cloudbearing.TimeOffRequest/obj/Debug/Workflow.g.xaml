@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ctt:Workflow xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ctt="clr-namespace:Cloudbearing.TimeOffRequest.TimeOffRequest_Approval_Workflow;assembly=Cloudbearing.TimeOffRequest" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:msdad="clr-namespace:Microsoft.SharePoint.DesignTime.Activities.Design;assembly=Microsoft.SharePoint.DesignTime.Activities.Design" xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities" xmlns:p1="wf://workflow.windows.net/$Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>Microsoft.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>AjaxMin</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.DesignTime.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>Cloudbearing.TimeOffRequestWeb</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Cloudbearing.TimeOffRequest</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <ctt:Workflow.Implementation>
+    <Sequence DisplayName="Stage 1">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="p:DynamicValue" Name="dv_0" />
+        <Variable x:TypeArguments="x:String" Default="Default" Name="RequestStatus" />
+        <Variable x:TypeArguments="x:String" Name="Approver1Text" />
+        <Variable x:TypeArguments="x:String" Name="Approver2Text" />
+        <Variable x:TypeArguments="x:String" Name="Approver3Text" />
+        <Variable x:TypeArguments="x:String" Name="RequestedName" />
+        <Variable x:TypeArguments="x:String" Name="Approver1StatusText" />
+        <Variable x:TypeArguments="x:String" Name="Approver2StatusText" />
+        <Variable x:TypeArguments="x:String" Name="Approver3StatusText" />
+        <Variable x:TypeArguments="x:String" Name="Approver1Email" />
+        <Variable x:TypeArguments="x:Int32" Name="RequestedBy" />
+        <Variable x:TypeArguments="x:Int32" Name="Approver1Id" />
+        <Variable x:TypeArguments="p:DynamicValue" Name="dv_1" />
+        <Variable x:TypeArguments="x:Int32" Name="Approver2Id" />
+        <Variable x:TypeArguments="x:Int32" Name="Approver3Id" />
+        <Variable x:TypeArguments="x:String" Name="Approver2Email" />
+        <Variable x:TypeArguments="x:String" Name="Approver3Email" />
+        <Variable x:TypeArguments="x:String" Name="RequestedByName" />
+        <Variable x:TypeArguments="x:String" Name="RequestedByEmail" />
+        <Variable x:TypeArguments="p:DynamicValue" Name="dv_2" />
+        <Variable x:TypeArguments="p:DynamicValue" Name="dv_3" />
+        <Variable x:TypeArguments="p:DynamicValue" Name="dv_4" />
+        <Variable x:TypeArguments="s:DateTime" Name="startDate" />
+        <Variable x:TypeArguments="s:DateTime" Name="endDate" />
+        <Variable x:TypeArguments="x:String" Name="approverUrl" />
+        <Variable x:TypeArguments="x:String" Name="timeOffType" />
+        <Variable x:TypeArguments="sco:Collection(x:String)" Name="emaillist" />
+        <Variable x:TypeArguments="x:Int32" Name="keyIdDeptCalendar" />
+        <Variable x:TypeArguments="x:String" Name="cancelStatus" />
+      </Sequence.Variables>
+      <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}">
+        <p1:LookupSPListItem.ItemId>
+          <InArgument x:TypeArguments="x:Int32">
+            <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+              <p1:GetCurrentItemId />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:LookupSPListItem.ItemId>
+        <p1:LookupSPListItem.ListId>
+          <InArgument x:TypeArguments="s:Guid">
+            <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+              <p1:GetCurrentListId />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:LookupSPListItem.ListId>
+        <p1:LookupSPListItem.Result>
+          <OutArgument x:TypeArguments="p:DynamicValue">
+            <mca:CSharpReference x:TypeArguments="p:DynamicValue">dv_0</mca:CSharpReference>
+          </OutArgument>
+        </p1:LookupSPListItem.Result>
+      </p1:LookupSPListItem>
+      <p1:WriteToHistory Message="After Lookup" />
+      <p:GetODataProperties DisplayName="GetDynamicValueProperties">
+        <p:GetODataProperties.Source>
+          <InArgument x:TypeArguments="p:DynamicValue">
+            <mca:CSharpValue x:TypeArguments="p:DynamicValue">dv_0</mca:CSharpValue>
+          </InArgument>
+        </p:GetODataProperties.Source>
+        <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+          <OutArgument x:TypeArguments="x:String" x:Key="Status">
+            <mca:CSharpReference x:TypeArguments="x:String">RequestStatus</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="Approver1Id">
+            <mca:CSharpReference x:TypeArguments="x:Int32">Approver1Id</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="Approver2Id">
+            <mca:CSharpReference x:TypeArguments="x:Int32">Approver2Id</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="Approver3Id">
+            <mca:CSharpReference x:TypeArguments="x:Int32">Approver3Id</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="Approver1Status">
+            <mca:CSharpReference x:TypeArguments="x:String">Approver1StatusText</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="Approver2Status">
+            <mca:CSharpReference x:TypeArguments="x:String">Approver2StatusText</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="Approver3Status">
+            <mca:CSharpReference x:TypeArguments="x:String">Approver3StatusText</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="RequestedById">
+            <mca:CSharpReference x:TypeArguments="x:Int32">RequestedBy</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="s:DateTime" x:Key="StartDateTime">
+            <mca:CSharpReference x:TypeArguments="s:DateTime">startDate</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="s:DateTime" x:Key="EndDateTime">
+            <mca:CSharpReference x:TypeArguments="s:DateTime">endDate</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="ApproverUrl">
+            <mca:CSharpReference x:TypeArguments="x:String">approverUrl</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="TimeOffType">
+            <mca:CSharpReference x:TypeArguments="x:String">timeOffType</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="CancelStatus">
+            <mca:CSharpReference x:TypeArguments="x:String">cancelStatus</mca:CSharpReference>
+          </OutArgument>
+        </scg:Dictionary>
+      </p:GetODataProperties>
+      <p1:LookupSPUser DisplayName="LookupRequester">
+        <p1:LookupSPUser.PrincipalId>
+          <InArgument x:TypeArguments="x:Int32">
+            <mca:CSharpValue x:TypeArguments="x:Int32">RequestedBy</mca:CSharpValue>
+          </InArgument>
+        </p1:LookupSPUser.PrincipalId>
+        <p1:LookupSPUser.Result>
+          <OutArgument x:TypeArguments="p:DynamicValue">
+            <mca:CSharpReference x:TypeArguments="p:DynamicValue">dv_4</mca:CSharpReference>
+          </OutArgument>
+        </p1:LookupSPUser.Result>
+      </p1:LookupSPUser>
+      <p:GetODataProperties DisplayName="GetRequester">
+        <p:GetODataProperties.Source>
+          <InArgument x:TypeArguments="p:DynamicValue">
+            <mca:CSharpValue x:TypeArguments="p:DynamicValue">dv_4</mca:CSharpValue>
+          </InArgument>
+        </p:GetODataProperties.Source>
+        <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+          <OutArgument x:TypeArguments="x:String" x:Key="Email">
+            <mca:CSharpReference x:TypeArguments="x:String">RequestedByEmail</mca:CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="Title">
+            <mca:CSharpReference x:TypeArguments="x:String">RequestedByName</mca:CSharpReference>
+          </OutArgument>
+        </scg:Dictionary>
+      </p:GetODataProperties>
+      <p1:WriteToHistory>
+        <p1:WriteToHistory.Message>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String">"Request Status:" + RequestStatus + "|Approver 1:" + Approver1Id</mca:CSharpValue>
+          </InArgument>
+        </p1:WriteToHistory.Message>
+      </p1:WriteToHistory>
+      <p1:UpdateListItem ItemGuid="{x:Null}" ListItemProperties="{x:Null}">
+        <p1:UpdateListItem.ItemId>
+          <InArgument x:TypeArguments="x:Int32">
+            <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+              <p1:GetCurrentItemId />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:UpdateListItem.ItemId>
+        <p1:UpdateListItem.ListId>
+          <InArgument x:TypeArguments="s:Guid">
+            <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+              <p1:GetCurrentListId />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:UpdateListItem.ListId>
+        <p1:UpdateListItem.ListItemPropertiesDynamicValue>
+          <InArgument x:TypeArguments="p:DynamicValue">
+            <p:SetDynamicValueProperties>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                <InArgument x:TypeArguments="x:String" x:Key="Title">
+                  <mca:CSharpValue x:TypeArguments="x:String">RequestedByName</mca:CSharpValue>
+                </InArgument>
+              </scg:Dictionary>
+            </p:SetDynamicValueProperties>
+          </InArgument>
+        </p1:UpdateListItem.ListItemPropertiesDynamicValue>
+      </p1:UpdateListItem>
+      <If>
+        <If.Condition>
+          <InArgument x:TypeArguments="x:Boolean">
+            <mca:CSharpValue x:TypeArguments="x:Boolean">RequestStatus == "Pending Approval"</mca:CSharpValue>
+          </InArgument>
+        </If.Condition>
+        <If.Then>
+          <Sequence>
+            <p1:WriteToHistory Message="Inside main status Pending Approval" />
+            <p1:LookupSPUser DisplayName="LookupApprover1">
+              <p1:LookupSPUser.PrincipalId>
+                <InArgument x:TypeArguments="x:Int32">
+                  <mca:CSharpValue x:TypeArguments="x:Int32">Approver1Id</mca:CSharpValue>
+                </InArgument>
+              </p1:LookupSPUser.PrincipalId>
+              <p1:LookupSPUser.Result>
+                <OutArgument x:TypeArguments="p:DynamicValue">
+                  <mca:CSharpReference x:TypeArguments="p:DynamicValue">dv_1</mca:CSharpReference>
+                </OutArgument>
+              </p1:LookupSPUser.Result>
+            </p1:LookupSPUser>
+            <p:GetODataProperties DisplayName="GetApprover1">
+              <p:GetODataProperties.Source>
+                <InArgument x:TypeArguments="p:DynamicValue">
+                  <mca:CSharpValue x:TypeArguments="p:DynamicValue">dv_1</mca:CSharpValue>
+                </InArgument>
+              </p:GetODataProperties.Source>
+              <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+                <OutArgument x:TypeArguments="x:String" x:Key="Email">
+                  <mca:CSharpReference x:TypeArguments="x:String">Approver1Email</mca:CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="Title">
+                  <mca:CSharpReference x:TypeArguments="x:String">Approver1Text</mca:CSharpReference>
+                </OutArgument>
+              </scg:Dictionary>
+            </p:GetODataProperties>
+            <If DisplayName="Check Approver 1">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean">Approver1StatusText == "Pending Approval"</mca:CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence>
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="p:DynamicValue" Name="dv_5" />
+                  </Sequence.Variables>
+                  <p1:WriteToHistory>
+                    <p1:WriteToHistory.Message>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"in approver 1 email" + Approver1Email</mca:CSharpValue>
+                      </InArgument>
+                    </p1:WriteToHistory.Message>
+                  </p1:WriteToHistory>
+                  <p:BuildCollection x:TypeArguments="x:String">
+                    <p:BuildCollection.Result>
+                      <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                        <mca:CSharpReference x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpReference>
+                      </OutArgument>
+                    </p:BuildCollection.Result>
+                    <p:BuildCollection.Values>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">Approver1Email</mca:CSharpValue>
+                      </InArgument>
+                    </p:BuildCollection.Values>
+                  </p:BuildCollection>
+                  <p1:WriteToHistory Message="After build collection" />
+                  <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}">
+                    <p1:Email.Body>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">RequestedByName + " is requesting time off. \n\nTime off request details -\n Time off Type: " + timeOffType + "\n Start Date: " + startDate.ToString() + "\n End Date: " + endDate.ToString() + "\n\n Approve or Deny the request by copy and paste the url below in your browser:\n\n" + approverUrl</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.Body>
+                    <p1:Email.Subject>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"Request for Time off approval by " + RequestedByName</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.Subject>
+                    <p1:Email.To>
+                      <InArgument x:TypeArguments="sco:Collection(x:String)">
+                        <mca:CSharpValue x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.To>
+                  </p1:Email>
+                  <p1:WriteToHistory>
+                    <p1:WriteToHistory.Message>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"Email sent to : " + emaillist[0]</mca:CSharpValue>
+                      </InArgument>
+                    </p1:WriteToHistory.Message>
+                  </p1:WriteToHistory>
+                </Sequence>
+              </If.Then>
+            </If>
+            <If DisplayName="Get Approver 2">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean">Approver2Id &gt; 0</mca:CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence>
+                  <p1:LookupSPUser DisplayName="LookupApprover2">
+                    <p1:LookupSPUser.PrincipalId>
+                      <InArgument x:TypeArguments="x:Int32">
+                        <mca:CSharpValue x:TypeArguments="x:Int32">Approver2Id</mca:CSharpValue>
+                      </InArgument>
+                    </p1:LookupSPUser.PrincipalId>
+                    <p1:LookupSPUser.Result>
+                      <OutArgument x:TypeArguments="p:DynamicValue">
+                        <mca:CSharpReference x:TypeArguments="p:DynamicValue">dv_2</mca:CSharpReference>
+                      </OutArgument>
+                    </p1:LookupSPUser.Result>
+                  </p1:LookupSPUser>
+                  <p:GetODataProperties DisplayName="GetApprover2">
+                    <p:GetODataProperties.Source>
+                      <InArgument x:TypeArguments="p:DynamicValue">
+                        <mca:CSharpValue x:TypeArguments="p:DynamicValue">dv_2</mca:CSharpValue>
+                      </InArgument>
+                    </p:GetODataProperties.Source>
+                    <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+                      <OutArgument x:TypeArguments="x:String" x:Key="Email">
+                        <mca:CSharpReference x:TypeArguments="x:String">Approver2Email</mca:CSharpReference>
+                      </OutArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="Title">
+                        <mca:CSharpReference x:TypeArguments="x:String">Approver2Text</mca:CSharpReference>
+                      </OutArgument>
+                    </scg:Dictionary>
+                  </p:GetODataProperties>
+                  <p1:WriteToHistory>
+                    <p1:WriteToHistory.Message>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"Approver 2 Email " + Approver2Email</mca:CSharpValue>
+                      </InArgument>
+                    </p1:WriteToHistory.Message>
+                  </p1:WriteToHistory>
+                </Sequence>
+              </If.Then>
+            </If>
+            <If DisplayName="Check Approver 2">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean">Approver1StatusText == "Approved" &amp;&amp; Approver2Id &gt; 0 &amp;&amp; Approver2StatusText == "Pending Approval"</mca:CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence>
+                  <p1:WriteToHistory Message="Inside Approver 2 Pending" />
+                  <p:BuildCollection x:TypeArguments="x:String">
+                    <p:BuildCollection.Result>
+                      <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                        <mca:CSharpReference x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpReference>
+                      </OutArgument>
+                    </p:BuildCollection.Result>
+                    <p:BuildCollection.Values>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">Approver2Email</mca:CSharpValue>
+                      </InArgument>
+                    </p:BuildCollection.Values>
+                  </p:BuildCollection>
+                  <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}">
+                    <p1:Email.Body>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">RequestedByName + " is requesting time off. \n\n Time off request details - \n Time off Type: " + timeOffType + "\n Start Date: " + startDate.ToString() + "\n End Date: " + endDate.ToString() + "\n\n Approver 1 " + Approver1Text + " has approved\n\n Approve or Deny the request by copy and paste the url below in your browser:\n\n" + approverUrl</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.Body>
+                    <p1:Email.Subject>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"Request for Time off approval by " + RequestedByName</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.Subject>
+                    <p1:Email.To>
+                      <InArgument x:TypeArguments="sco:Collection(x:String)">
+                        <mca:CSharpValue x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.To>
+                  </p1:Email>
+                  <p1:WriteToHistory Message="After approver 2 Email" />
+                </Sequence>
+              </If.Then>
+            </If>
+            <p1:WriteToHistory Message="After approver 2 Approved - before Approver 3 check" />
+            <If DisplayName="Check Approver 3">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <mca:CSharpValue x:TypeArguments="x:Boolean">Approver2StatusText == "Approved" &amp;&amp; Approver3Id &gt; 0 &amp;&amp; Approver3StatusText == "Pending Approval"</mca:CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence>
+                  <p1:WriteToHistory Message="Inside Approver 3 Pending" />
+                  <p1:LookupSPUser DisplayName="LookupApprover3">
+                    <p1:LookupSPUser.PrincipalId>
+                      <InArgument x:TypeArguments="x:Int32">
+                        <mca:CSharpValue x:TypeArguments="x:Int32">Approver3Id</mca:CSharpValue>
+                      </InArgument>
+                    </p1:LookupSPUser.PrincipalId>
+                    <p1:LookupSPUser.Result>
+                      <OutArgument x:TypeArguments="p:DynamicValue">
+                        <mca:CSharpReference x:TypeArguments="p:DynamicValue">dv_3</mca:CSharpReference>
+                      </OutArgument>
+                    </p1:LookupSPUser.Result>
+                  </p1:LookupSPUser>
+                  <p:GetODataProperties DisplayName="GetApprover3">
+                    <p:GetODataProperties.Source>
+                      <InArgument x:TypeArguments="p:DynamicValue">
+                        <mca:CSharpValue x:TypeArguments="p:DynamicValue">dv_3</mca:CSharpValue>
+                      </InArgument>
+                    </p:GetODataProperties.Source>
+                    <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+                      <OutArgument x:TypeArguments="x:String" x:Key="Email">
+                        <mca:CSharpReference x:TypeArguments="x:String">Approver3Email</mca:CSharpReference>
+                      </OutArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="Title">
+                        <mca:CSharpReference x:TypeArguments="x:String">Approver3Text</mca:CSharpReference>
+                      </OutArgument>
+                    </scg:Dictionary>
+                  </p:GetODataProperties>
+                  <p1:WriteToHistory>
+                    <p1:WriteToHistory.Message>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"Approver 3 Email " + Approver3Email</mca:CSharpValue>
+                      </InArgument>
+                    </p1:WriteToHistory.Message>
+                  </p1:WriteToHistory>
+                  <p:BuildCollection x:TypeArguments="x:String">
+                    <p:BuildCollection.Result>
+                      <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                        <mca:CSharpReference x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpReference>
+                      </OutArgument>
+                    </p:BuildCollection.Result>
+                    <p:BuildCollection.Values>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">Approver3Email</mca:CSharpValue>
+                      </InArgument>
+                    </p:BuildCollection.Values>
+                  </p:BuildCollection>
+                  <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}">
+                    <p1:Email.Body>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">RequestedByName + " is requesting time off. \n\n Time off request details-\n Time off Type: " + timeOffType + "\n Start Date: " + startDate.ToString() + "\n End Date: " + endDate.ToString() + "\n\n Approver 1 " + Approver1Text + " and Approver 2 " + Approver2Text + " have approved\n\n Approve or Deny the request by copy and paste the url below in your browser:\n\n" + approverUrl</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.Body>
+                    <p1:Email.Subject>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">"Request for Time off approval by " + RequestedByName</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.Subject>
+                    <p1:Email.To>
+                      <InArgument x:TypeArguments="sco:Collection(x:String)">
+                        <mca:CSharpValue x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpValue>
+                      </InArgument>
+                    </p1:Email.To>
+                  </p1:Email>
+                  <p1:WriteToHistory Message="After approver 3 Email" />
+                </Sequence>
+              </If.Then>
+            </If>
+          </Sequence>
+        </If.Then>
+      </If>
+      <If>
+        <If.Condition>
+          <InArgument x:TypeArguments="x:Boolean">
+            <mca:CSharpValue x:TypeArguments="x:Boolean">RequestStatus == "Denied"</mca:CSharpValue>
+          </InArgument>
+        </If.Condition>
+        <If.Then>
+          <Sequence>
+            <p1:WriteToHistory>
+              <p1:WriteToHistory.Message>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">"Request is DENIED Email " + RequestedByEmail</mca:CSharpValue>
+                </InArgument>
+              </p1:WriteToHistory.Message>
+            </p1:WriteToHistory>
+            <p:BuildCollection x:TypeArguments="x:String">
+              <p:BuildCollection.Result>
+                <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                  <mca:CSharpReference x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpReference>
+                </OutArgument>
+              </p:BuildCollection.Result>
+              <p:BuildCollection.Values>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">RequestedByEmail</mca:CSharpValue>
+                </InArgument>
+              </p:BuildCollection.Values>
+            </p:BuildCollection>
+            <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}" Subject="Time off request is DENIED">
+              <p1:Email.Body>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">"Your time off request is denied.\n Time off request details:\n Time off Type: " + timeOffType + "\n Start Date: " + startDate.ToString() + "\n End Date: " + endDate.ToString()</mca:CSharpValue>
+                </InArgument>
+              </p1:Email.Body>
+              <p1:Email.To>
+                <InArgument x:TypeArguments="sco:Collection(x:String)">
+                  <mca:CSharpValue x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpValue>
+                </InArgument>
+              </p1:Email.To>
+            </p1:Email>
+          </Sequence>
+        </If.Then>
+      </If>
+      <If>
+        <If.Condition>
+          <InArgument x:TypeArguments="x:Boolean">
+            <mca:CSharpValue x:TypeArguments="x:Boolean">RequestStatus == "Approved" &amp;&amp; cancelStatus != "Cancel"</mca:CSharpValue>
+          </InArgument>
+        </If.Condition>
+        <If.Then>
+          <Sequence>
+            <p1:WriteToHistory>
+              <p1:WriteToHistory.Message>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">"Request is Approved Email " + RequestedByEmail</mca:CSharpValue>
+                </InArgument>
+              </p1:WriteToHistory.Message>
+            </p1:WriteToHistory>
+            <p:BuildCollection x:TypeArguments="x:String">
+              <p:BuildCollection.Result>
+                <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                  <mca:CSharpReference x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpReference>
+                </OutArgument>
+              </p:BuildCollection.Result>
+              <p:BuildCollection.Values>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">RequestedByEmail</mca:CSharpValue>
+                </InArgument>
+              </p:BuildCollection.Values>
+            </p:BuildCollection>
+            <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}" Subject="Time off request is APPROVED">
+              <p1:Email.Body>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">"Your time off request is approved.\n Time off request details:\n Time off Type: " + timeOffType + "\n Start Date: " + startDate.ToString() + "\n End Date: " + endDate.ToString()</mca:CSharpValue>
+                </InArgument>
+              </p1:Email.Body>
+              <p1:Email.To>
+                <InArgument x:TypeArguments="sco:Collection(x:String)">
+                  <mca:CSharpValue x:TypeArguments="sco:Collection(x:String)">emaillist</mca:CSharpValue>
+                </InArgument>
+              </p1:Email.To>
+            </p1:Email>
+            <p1:LookupSPListItemId PropertyValue="DepartmentCalendar">
+              <p1:LookupSPListItemId.ListId>
+                <InArgument x:TypeArguments="s:Guid">
+                  <mca:CSharpValue x:TypeArguments="s:Guid">System.Guid.Parse("{$ListId:Lists/ConfigList;}")</mca:CSharpValue>
+                </InArgument>
+              </p1:LookupSPListItemId.ListId>
+              <p1:LookupSPListItemId.PropertyName>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String">"Key"</mca:CSharpValue>
+                </InArgument>
+              </p1:LookupSPListItemId.PropertyName>
+            </p1:LookupSPListItemId>
+          </Sequence>
+        </If.Then>
+      </If>
+      <sads:DebugSymbol.Symbol>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</sads:DebugSymbol.Symbol>
+    </Sequence>
+  </ctt:Workflow.Implementation>
+</ctt:Workflow>

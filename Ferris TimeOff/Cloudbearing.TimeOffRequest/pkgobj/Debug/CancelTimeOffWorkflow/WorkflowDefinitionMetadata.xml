@@ -1,0 +1,7 @@
+﻿<WorkflowDefinition xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>My 'CancelTimeOffWorkflow' Workflow</Description>
+  <DisplayName>CancelTimeOffWorkflow</DisplayName>
+  <Id>d4882f0e-e9a6-4d52-86dd-b0f4c62dbbeb</Id>
+  <RestrictAssociationToId>Lists/TimeOffRequests</RestrictAssociationToId>
+  <RestrictAssociationToType>List</RestrictAssociationToType>
+</WorkflowDefinition>

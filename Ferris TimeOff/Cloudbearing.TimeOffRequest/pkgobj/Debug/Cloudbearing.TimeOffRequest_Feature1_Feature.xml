@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="141a191b-ac79-4cbf-bdb2-97607c52f870" Scope="Web" Title="Cloudbearing.TimeOffRequest Feature1" Version="2.0.0.1">
+  <ElementManifests>
+    <ElementManifest Location="Elements.xml" />
+    <ElementFile Location="app.config" />
+    <ElementFile Location="scripts\CSRListView.js" />
+    <ElementFile Location="logon.png" />
+    <ElementFile Location="TimeOffTypes.stp" />
+    <ElementFile Location="Images\time_off_icon_2014_96x96.png" />
+    <ElementFile Location="appIcon.png" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\Page1.aspx" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Elements.xml" />
+        <ElementManifest Location="Pages\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

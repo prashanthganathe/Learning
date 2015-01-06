@@ -1,0 +1,247 @@
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\App.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\AudienceInfo.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\SettingsFlyouts\ContactUs.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\Common\StandardStyles.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\ItemSubPage.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\MainPage.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\SettingsFlyouts\AboutUs.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\SettingsFlyouts\PrivacyPolicy.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\SettingsFlyouts\TermsAndConditions.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\Windows8Theme.xr.xml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\Windows8Theme.exe
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\Windows8Theme.pdb
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\resources.pri
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\AppxManifest.xml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\BlockStyleColor.build.appxrecipe
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\bin\Debug\AWSSDK.dll
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\App.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\App.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\AudienceInfo.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\AudienceInfo.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\Common\StandardStyles.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\Common\StandardStyles.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\ItemSubPage.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\ItemSubPage.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\MainPage.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\MainPage.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.g.i.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\App.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\AudienceInfo.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\Common\StandardStyles.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\ItemSubPage.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\MainPage.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.xaml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\App.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\AudienceInfo.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\Common\StandardStyles.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\ItemSubPage.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\MainPage.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.xbf
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\XamlSaveStateFile.xml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\Windows8Theme.exe
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\Windows8Theme.pdb
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\BlockStyleColor.csproj.GenerateResource.Cache
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\priconfig.xml
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\priconfig.xml.intermediate
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\layout.resfiles
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\layout.resfiles.intermediate
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\resources.resfiles
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\resources.resfiles.intermediate
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\pri.resfiles
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\pri.resfiles.intermediate
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\qualifiers.txt
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\qualifiers.txt.intermediate
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\ProjectArchitectures.txt
+C:\Users\mw-inspiron-001\Downloads\Block Style Color v.1.0.0.0\Block Style Color v.1.0.0.0\Source\C#\BlockStyleColor\obj\Debug\BlockStyleColor.csprojResolveAssemblyReference.cache
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\App.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcquirerHome.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ExpertsResponse.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\PB.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcqList.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\StatsNewDownload.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\StatsNew.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Stats.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ReportQueue.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UploadImageTransferUtility.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UsersList.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\RequestQueue.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcReport.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Response.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ReportToAcq.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AddUser.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UploadImage.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\MainPage.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ExpertHome.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AudienceInfo.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AdminHome.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\ContactUs.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UserList.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Common\StandardStyles.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ItemSubPage.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\AboutUs.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\PrivacyPolicy.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\TermsAndConditions.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Windows8Theme.xr.xml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Windows8Theme.exe
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Windows8Theme.pdb
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\resources.pri
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AppxManifest.xml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\BlockStyleColor.build.appxrecipe
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AWSSDK.dll
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Newtonsoft.Json.dll
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Newtonsoft.Json.xml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\App.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\App.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcquirerHome.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcquirerHome.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertsResponse.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertsResponse.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\PB.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\PB.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqList.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqList.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNewDownload.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNewDownload.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNew.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNew.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Stats.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Stats.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportQueue.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportQueue.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImageTransferUtility.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImageTransferUtility.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UsersList.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UsersList.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\RequestQueue.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\RequestQueue.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcReport.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcReport.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Response.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Response.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportToAcq.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportToAcq.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AddUser.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AddUser.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImage.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImage.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\MainPage.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\MainPage.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertHome.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertHome.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AudienceInfo.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AudienceInfo.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AdminHome.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AdminHome.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UserList.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UserList.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Common\StandardStyles.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Common\StandardStyles.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ItemSubPage.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ItemSubPage.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\XamlTypeInfo.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\App.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcquirerHome.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\PB.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNewDownload.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNew.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Stats.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportQueue.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImageTransferUtility.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UsersList.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\RequestQueue.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcReport.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportToAcq.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AddUser.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImage.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\MainPage.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertHome.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AudienceInfo.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AdminHome.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UserList.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Common\StandardStyles.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ItemSubPage.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\App.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcquirerHome.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\PB.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNewDownload.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\StatsNew.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Stats.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportQueue.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImageTransferUtility.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UsersList.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\RequestQueue.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcReport.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ReportToAcq.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AddUser.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UploadImage.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\MainPage.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertHome.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AudienceInfo.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AdminHome.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\ContactUs.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\UserList.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Common\StandardStyles.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ItemSubPage.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\AboutUs.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\PrivacyPolicy.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\SettingsFlyouts\TermsAndConditions.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\XamlSaveStateFile.xml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertsResponse.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqList.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Response.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ExpertsResponse.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqList.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Response.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Windows8Theme.exe
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\Windows8Theme.pdb
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\BlockStyleColor.csproj.GenerateResource.Cache
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\priconfig.xml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\priconfig.xml.intermediate
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\layout.resfiles
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\layout.resfiles.intermediate
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\resources.resfiles
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\resources.resfiles.intermediate
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\pri.resfiles
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\pri.resfiles.intermediate
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\qualifiers.txt
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\qualifiers.txt.intermediate
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\ProjectArchitectures.txt
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\BlockStyleColor.csprojResolveAssemblyReference.cache
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\BlankPage1.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\BlankPage1.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\BlankPage1.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\BlankPage1.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\BlankPage1.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqRepList.g.i.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqRepList.g.cs
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqRepList.xaml
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\AcqRepList.xbf
+E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcqRepList.xbf

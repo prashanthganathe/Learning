@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="e:\windowsapps\windowsapp\metro\blockstylecolor\obj\debug\intermediatexaml\windows8theme.exe" HashGuid="1cf00696-cb4c-596c-bf0c-362cf6ebd702" />
+    <ReferenceAssembly PathName="e:\windowsapps\windowsapp\metro\packages\awssdk.2.1.6.0\lib\windows8\awssdk.dll" HashGuid="6ab7aa73-8983-4c0d-5918-4252dfadec80" />
+    <ReferenceAssembly PathName="e:\windowsapps\windowsapp\metro\packages\newtonsoft.json.6.0.4\lib\netcore45\newtonsoft.json.dll" HashGuid="21d6fdf9-5b56-582d-4524-cf342594819a" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

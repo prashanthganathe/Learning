@@ -1,0 +1,1172 @@
+<Activity mc:Ignorable="sads" x:Class="Cloudbearing.TimeOffRequest.CancelTimeOffWorkflow.Workflow"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:made="clr-namespace:Microsoft.Activities.Design.ExpressionTranslation;assembly=Microsoft.Activities.Design"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:p1="wf://workflow.windows.net/$Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence DisplayName="Stage 1" sads:DebugSymbol.Symbol="9xCIgfzwXSbbCZvXS46y/tPVYEU6XFNoYXJlcG9pbnRBcHBzXEZlcnJpcyBUaW1lT2ZmXENsb3VkYmVhcmluZy5UaW1lT2ZmUmVxdWVzdFxDYW5jZWxUaW1lT2ZmV29ya2Zsb3dcV29ya2Zsb3cueGFtbC8rA9UDDgIBAUwFYBsDAbwBYQVhZAMBugFiBZQBHAMBmwGVAQWgARcDAZYBoQEFrwEcAwGPAbABBbYBGQMBiwG3AQXRARkDAYUB0gEF0wMKAgEDyAELzgEpAwGIAdkBCdEDFAIBBtoBC9oBdgMBgwHbAQvQAxACAQfiAQ/PAhoCAVDSAg/OAxoCAQrmARHmAYcBAwGBAecBEfIBIwIBfPMBEYECKAIBdYICEbsCFgIBWrwCEbwCfAIBWL0CEb0CegIBVr4CEc0CJQIBU84CEc4CegIBUdMCEdMCfQIBTtQCEc0DFgIBC4kCFbkCIAIBXdsCFcsDIAIBDo0CF5MCKwIBcpQCF58CKwIBbaACF6ACkwECAWuhAhexAiICAWGyAhe4AisCAV7cAhfiAisCAUvjAhfKAxwCAQ/qAhuqAyYCASWtAxvIAyYCARLrAh3rAoEBAgFJ7AId9wIvAgFE+AIdhgM0AgE9hwMdlQMxAgE2lgMdnAMxAgEynQMdqAMoAgEoqQMdqQPjAQIBJq4DHa4DigECASOvAx26AzECAR67Ax3GAygCARXHAx3HA5YBAgET">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID0" Name="dv_0" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID1" Default="Default" Name="RequestStatus" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID20" Name="Approver1Text" />
+      <Variable x:TypeArguments="x:String" Name="Approver2Text" />
+      <Variable x:TypeArguments="x:String" Name="Approver3Text" />
+      <Variable x:TypeArguments="x:String" Name="RequestedName" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID5" Name="Approver1StatusText" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID6" Name="Approver2StatusText" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID7" Name="Approver3StatusText" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID19" Name="Approver1Email" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID8" Name="RequestedBy" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID2" Name="Approver1Id" />
+      <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID18" Name="dv_1" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID3" Name="Approver2Id" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID4" Name="Approver3Id" />
+      <Variable x:TypeArguments="x:String" Name="Approver2Email" />
+      <Variable x:TypeArguments="x:String" Name="Approver3Email" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID17" Name="RequestedByName" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID16" Name="RequestedByEmail" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="dv_2" />
+      <Variable x:TypeArguments="p:DynamicValue" Name="dv_3" />
+      <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID15" Name="dv_4" />
+      <Variable x:TypeArguments="s:DateTime" x:Name="__ReferenceID9" Name="startDate" />
+      <Variable x:TypeArguments="s:DateTime" x:Name="__ReferenceID10" Name="endDate" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID11" Name="approverUrl" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID12" Name="timeOffType" />
+      <Variable x:TypeArguments="sco:Collection(x:String)" x:Name="__ReferenceID21" Name="emaillist" />
+      <Variable x:TypeArguments="x:Int32" Name="keyIdDeptCalendar" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID13" Name="cancelStatus" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID14" Name="RequestID" />
+    </Sequence.Variables>
+    <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}">
+      <p1:LookupSPListItem.ItemId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+            <p1:GetCurrentItemId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPListItem.ItemId>
+      <p1:LookupSPListItem.ListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+            <p1:GetCurrentListId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPListItem.ListId>
+      <p1:LookupSPListItem.Result>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="dv_0">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="dv_0">
+                <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="dv_0" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </p1:LookupSPListItem.Result>
+    </p1:LookupSPListItem>
+    <p1:WriteToHistory Message="After Lookup" />
+    <p:GetODataProperties DisplayName="GetDynamicValueProperties">
+      <p:GetODataProperties.Source>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="dv_0">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="p:DynamicValue" x:Key="dv_0">
+                <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="dv_0" />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p:GetODataProperties.Source>
+      <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+        <OutArgument x:TypeArguments="x:String" x:Key="Status">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="RequestStatus">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="RequestStatus">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID1}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="RequestStatus" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="Approver1Id">
+          <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="Approver1Id">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:Int32" x:Key="Approver1Id">
+                <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID2}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="Approver1Id" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="Approver2Id">
+          <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="Approver2Id">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:Int32" x:Key="Approver2Id">
+                <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID3}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="Approver2Id" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="Approver3Id">
+          <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="Approver3Id">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:Int32" x:Key="Approver3Id">
+                <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID4}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="Approver3Id" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="Approver1Status">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="Approver1StatusText">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="Approver1StatusText">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID5}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="Approver1StatusText" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="Approver2Status">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="Approver2StatusText">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="Approver2StatusText">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID6}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="Approver2StatusText" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="Approver3Status">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="Approver3StatusText">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="Approver3StatusText">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID7}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="Approver3StatusText" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="RequestedById">
+          <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="RequestedBy">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:Int32" x:Key="RequestedBy">
+                <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID8}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="RequestedBy" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="s:DateTime" x:Key="StartDateTime">
+          <p:ExpressionContainerReference x:TypeArguments="s:DateTime" DisplayName="startDate">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="s:DateTime" x:Key="startDate">
+                <VariableReference x:TypeArguments="s:DateTime" Variable="{x:Reference __ReferenceID9}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="s:DateTime" ArgumentName="startDate" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="s:DateTime" x:Key="EndDateTime">
+          <p:ExpressionContainerReference x:TypeArguments="s:DateTime" DisplayName="endDate">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="s:DateTime" x:Key="endDate">
+                <VariableReference x:TypeArguments="s:DateTime" Variable="{x:Reference __ReferenceID10}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="s:DateTime" ArgumentName="endDate" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="ApproverUrl">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="approverUrl">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="approverUrl">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID11}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="approverUrl" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="TimeOffType">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="timeOffType">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="timeOffType">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID12}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="timeOffType" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="CancelStatus">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="cancelStatus">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="cancelStatus">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID13}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="cancelStatus" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="Id">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="RequestID">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="RequestID">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID14}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="RequestID" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </scg:Dictionary>
+    </p:GetODataProperties>
+    <p1:LookupSPUser DisplayName="LookupRequester">
+      <p1:LookupSPUser.PrincipalId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerValue x:TypeArguments="x:Int32" DisplayName="RequestedBy">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="x:Int32" x:Key="RequestedBy">
+                <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID8}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="RequestedBy" />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:LookupSPUser.PrincipalId>
+      <p1:LookupSPUser.Result>
+        <OutArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="dv_4">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="dv_4">
+                <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID15}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="dv_4" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </p1:LookupSPUser.Result>
+    </p1:LookupSPUser>
+    <p:GetODataProperties DisplayName="GetRequester">
+      <p:GetODataProperties.Source>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="dv_4">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="p:DynamicValue" x:Key="dv_4">
+                <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID15}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="dv_4" />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p:GetODataProperties.Source>
+      <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+        <OutArgument x:TypeArguments="x:String" x:Key="Email">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="RequestedByEmail">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="RequestedByEmail">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID16}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="RequestedByEmail" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="Title">
+          <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="RequestedByName">
+            <p:ExpressionContainerReference.Arguments>
+              <InOutArgument x:TypeArguments="x:String" x:Key="RequestedByName">
+                <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID17}" />
+              </InOutArgument>
+            </p:ExpressionContainerReference.Arguments>
+            <ArgumentReference x:TypeArguments="x:String" ArgumentName="RequestedByName" />
+          </p:ExpressionContainerReference>
+        </OutArgument>
+      </scg:Dictionary>
+    </p:GetODataProperties>
+    <p1:WriteToHistory>
+      <p1:WriteToHistory.Message>
+        <InArgument x:TypeArguments="x:String">
+          <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Request Status:&quot; + RequestStatus + &quot;|Approver 1:&quot; + Approver1Id">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="RequestStatus">
+                <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID1}" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:Int32" x:Key="Approver1Id">
+                <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID2}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <p:ConcatString>
+              <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                <p:ConcatString>
+                  <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                    <p:ConcatString>
+                      <p:ConcatString.Result>
+                        <OutArgument x:TypeArguments="x:String" />
+                      </p:ConcatString.Result>
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Request Status:" />
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestStatus" />
+                      </InArgument>
+                    </p:ConcatString>
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="|Approver 1:" />
+                </p:ConcatString>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                <p:Convert x:TypeArguments="x:Int32, x:String">
+                  <InArgument x:TypeArguments="x:Int32">
+                    <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="Approver1Id" />
+                  </InArgument>
+                </p:Convert>
+              </InArgument>
+            </p:ConcatString>
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:WriteToHistory.Message>
+    </p1:WriteToHistory>
+    <p1:UpdateListItem ItemGuid="{x:Null}" ListItemProperties="{x:Null}">
+      <p1:UpdateListItem.ItemId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+            <p1:GetCurrentItemId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:UpdateListItem.ItemId>
+      <p1:UpdateListItem.ListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+            <p1:GetCurrentListId />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p1:UpdateListItem.ListId>
+      <p1:UpdateListItem.ListItemPropertiesDynamicValue>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:SetDynamicValueProperties>
+            <scg:Dictionary x:TypeArguments="x:String, InArgument">
+              <InArgument x:TypeArguments="x:String" x:Key="Title">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="RequestedByName">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="RequestedByName">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID17}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByName" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </scg:Dictionary>
+          </p:SetDynamicValueProperties>
+        </InArgument>
+      </p1:UpdateListItem.ListItemPropertiesDynamicValue>
+    </p1:UpdateListItem>
+    <If>
+      <If.Condition>
+        <InArgument x:TypeArguments="x:Boolean">
+          <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="cancelStatus == &quot;Cancel&quot;">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="cancelStatus">
+                <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID13}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <p:IsEqualString Pattern="{x:Null}" Text="Cancel">
+              <p:IsEqualString.Input>
+                <InArgument x:TypeArguments="x:String">
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="cancelStatus" />
+                </InArgument>
+              </p:IsEqualString.Input>
+            </p:IsEqualString>
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </If.Condition>
+      <If.Then>
+        <Sequence>
+          <p1:WriteToHistory Message="In cancelStatus==cancel" />
+          <If DisplayName="Pending Approval">
+            <If.Condition>
+              <InArgument x:TypeArguments="x:Boolean">
+                <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="RequestStatus == &quot;Pending Approval&quot;">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="RequestStatus">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID1}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <p:IsEqualString Pattern="{x:Null}" Text="Pending Approval">
+                    <p:IsEqualString.Input>
+                      <InArgument x:TypeArguments="x:String">
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestStatus" />
+                      </InArgument>
+                    </p:IsEqualString.Input>
+                  </p:IsEqualString>
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </If.Condition>
+            <If.Then>
+              <Sequence>
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Int32" Name="RequestID" />
+                </Sequence.Variables>
+                <p1:WriteToHistory Message="Inside main status Pending Approval" />
+                <p1:LookupSPUser DisplayName="LookupApprover1">
+                  <p1:LookupSPUser.PrincipalId>
+                    <InArgument x:TypeArguments="x:Int32">
+                      <p:ExpressionContainerValue x:TypeArguments="x:Int32" DisplayName="Approver1Id">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:Int32" x:Key="Approver1Id">
+                            <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID2}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="Approver1Id" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                  </p1:LookupSPUser.PrincipalId>
+                  <p1:LookupSPUser.Result>
+                    <OutArgument x:TypeArguments="p:DynamicValue">
+                      <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="dv_1">
+                        <p:ExpressionContainerReference.Arguments>
+                          <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="dv_1">
+                            <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID18}" />
+                          </InOutArgument>
+                        </p:ExpressionContainerReference.Arguments>
+                        <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="dv_1" />
+                      </p:ExpressionContainerReference>
+                    </OutArgument>
+                  </p1:LookupSPUser.Result>
+                </p1:LookupSPUser>
+                <p:GetODataProperties DisplayName="GetApprover1">
+                  <p:GetODataProperties.Source>
+                    <InArgument x:TypeArguments="p:DynamicValue">
+                      <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="dv_1">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="p:DynamicValue" x:Key="dv_1">
+                            <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID18}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="dv_1" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                  </p:GetODataProperties.Source>
+                  <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+                    <OutArgument x:TypeArguments="x:String" x:Key="Email">
+                      <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="Approver1Email">
+                        <p:ExpressionContainerReference.Arguments>
+                          <InOutArgument x:TypeArguments="x:String" x:Key="Approver1Email">
+                            <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID19}" />
+                          </InOutArgument>
+                        </p:ExpressionContainerReference.Arguments>
+                        <ArgumentReference x:TypeArguments="x:String" ArgumentName="Approver1Email" />
+                      </p:ExpressionContainerReference>
+                    </OutArgument>
+                    <OutArgument x:TypeArguments="x:String" x:Key="Title">
+                      <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="Approver1Text">
+                        <p:ExpressionContainerReference.Arguments>
+                          <InOutArgument x:TypeArguments="x:String" x:Key="Approver1Text">
+                            <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID20}" />
+                          </InOutArgument>
+                        </p:ExpressionContainerReference.Arguments>
+                        <ArgumentReference x:TypeArguments="x:String" ArgumentName="Approver1Text" />
+                      </p:ExpressionContainerReference>
+                    </OutArgument>
+                  </scg:Dictionary>
+                </p:GetODataProperties>
+                <If DisplayName="Check Approver 1">
+                  <If.Condition>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="Approver1StatusText == &quot;Pending Approval&quot;">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="Approver1StatusText">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID5}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <p:IsEqualString Pattern="{x:Null}" Text="Pending Approval">
+                          <p:IsEqualString.Input>
+                            <InArgument x:TypeArguments="x:String">
+                              <ArgumentValue x:TypeArguments="x:String" ArgumentName="Approver1StatusText" />
+                            </InArgument>
+                          </p:IsEqualString.Input>
+                        </p:IsEqualString>
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                  </If.Condition>
+                  <If.Then>
+                    <Sequence>
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="p:DynamicValue" Name="dv_5" />
+                      </Sequence.Variables>
+                      <p1:WriteToHistory>
+                        <p1:WriteToHistory.Message>
+                          <InArgument x:TypeArguments="x:String">
+                            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;in approver 1 email&quot; + Approver1Email">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="Approver1Email">
+                                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID19}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <p:ConcatString>
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="in approver 1 email" />
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="Approver1Email" />
+                                </InArgument>
+                              </p:ConcatString>
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </p1:WriteToHistory.Message>
+                      </p1:WriteToHistory>
+                      <p:BuildCollection x:TypeArguments="x:String">
+                        <p:BuildCollection.Result>
+                          <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                            <p:ExpressionContainerReference x:TypeArguments="sco:Collection(x:String)" DisplayName="emaillist">
+                              <p:ExpressionContainerReference.Arguments>
+                                <InOutArgument x:TypeArguments="sco:Collection(x:String)" x:Key="emaillist">
+                                  <VariableReference x:TypeArguments="sco:Collection(x:String)" Variable="{x:Reference __ReferenceID21}" />
+                                </InOutArgument>
+                              </p:ExpressionContainerReference.Arguments>
+                              <ArgumentReference x:TypeArguments="sco:Collection(x:String)" ArgumentName="emaillist" />
+                            </p:ExpressionContainerReference>
+                          </OutArgument>
+                        </p:BuildCollection.Result>
+                        <p:BuildCollection.Values>
+                          <InArgument x:TypeArguments="x:String">
+                            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="Approver1Email">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="Approver1Email">
+                                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID19}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <ArgumentValue x:TypeArguments="x:String" ArgumentName="Approver1Email" />
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </p:BuildCollection.Values>
+                      </p:BuildCollection>
+                      <p1:WriteToHistory Message="Sending mail to Approver1 on cancellation" />
+                      <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}">
+                        <p1:Email.Body>
+                          <InArgument x:TypeArguments="x:String">
+                            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="RequestedByName + &quot;  Cancelled the pending Time Off request. \n\nTime Off request details -\n Time off Type: &quot; + timeOffType + &quot;\n Start Date: &quot; + startDate.ToString() + &quot;\n End Date: &quot; + endDate.ToString()">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="RequestedByName">
+                                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID17}" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="timeOffType">
+                                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID12}" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:Object" x:Key="startDate">
+                                  <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID9}" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:Object" x:Key="endDate">
+                                  <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID10}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <p:ConcatString>
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                  <p:ConcatString>
+                                    <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                      <p:ConcatString>
+                                        <p:ConcatString.Result>
+                                          <OutArgument x:TypeArguments="x:String" />
+                                        </p:ConcatString.Result>
+                                        <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                          <p:ConcatString>
+                                            <p:ConcatString.Result>
+                                              <OutArgument x:TypeArguments="x:String" />
+                                            </p:ConcatString.Result>
+                                            <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                              <p:ConcatString>
+                                                <p:ConcatString.Result>
+                                                  <OutArgument x:TypeArguments="x:String" />
+                                                </p:ConcatString.Result>
+                                                <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                  <p:ConcatString>
+                                                    <p:ConcatString.Result>
+                                                      <OutArgument x:TypeArguments="x:String" />
+                                                    </p:ConcatString.Result>
+                                                    <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                      <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByName" />
+                                                    </InArgument>
+                                                    <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="  Cancelled the pending Time Off request. &#xA;&#xA;Time Off request details -&#xA; Time off Type: " />
+                                                  </p:ConcatString>
+                                                </InArgument>
+                                                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="timeOffType" />
+                                                </InArgument>
+                                              </p:ConcatString>
+                                            </InArgument>
+                                            <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA; Start Date: " />
+                                          </p:ConcatString>
+                                        </InArgument>
+                                        <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                          <p:ToString CultureName="{x:Null}" Format="{x:Null}">
+                                            <p:ToString.Result>
+                                              <OutArgument x:TypeArguments="x:String" />
+                                            </p:ToString.Result>
+                                            <InArgument x:TypeArguments="x:Object">
+                                              <ArgumentValue x:TypeArguments="x:Object" ArgumentName="startDate" />
+                                            </InArgument>
+                                          </p:ToString>
+                                        </InArgument>
+                                      </p:ConcatString>
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA; End Date: " />
+                                  </p:ConcatString>
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                  <p:ToString>
+                                    <InArgument x:TypeArguments="x:Object">
+                                      <ArgumentValue x:TypeArguments="x:Object" ArgumentName="endDate" />
+                                    </InArgument>
+                                  </p:ToString>
+                                </InArgument>
+                              </p:ConcatString>
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </p1:Email.Body>
+                        <p1:Email.Subject>
+                          <InArgument x:TypeArguments="x:String">
+                            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Cancellation of Time Off Request by &quot; + RequestedByName">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="RequestedByName">
+                                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID17}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <p:ConcatString>
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Cancellation of Time Off Request by " />
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByName" />
+                                </InArgument>
+                              </p:ConcatString>
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </p1:Email.Subject>
+                        <p1:Email.To>
+                          <InArgument x:TypeArguments="sco:Collection(x:String)">
+                            <p:ExpressionContainerValue x:TypeArguments="sco:Collection(x:String)" DisplayName="emaillist">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="sco:Collection(x:String)" x:Key="emaillist">
+                                  <VariableValue x:TypeArguments="sco:Collection(x:String)" Variable="{x:Reference __ReferenceID21}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <ArgumentValue x:TypeArguments="sco:Collection(x:String)" ArgumentName="emaillist" />
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </p1:Email.To>
+                      </p1:Email>
+                      <p1:WriteToHistory>
+                        <p1:WriteToHistory.Message>
+                          <InArgument x:TypeArguments="x:String">
+                            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Email sent to : &quot; + emaillist[0]">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="scg:ICollection(x:String)" x:Key="emaillist">
+                                  <VariableValue x:TypeArguments="scg:ICollection(x:String)" Variable="{x:Reference __ReferenceID21}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <p:ConcatString>
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Email sent to : " />
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                  <p:GetItemFromCollection x:TypeArguments="x:String" Index="0">
+                                    <InArgument x:TypeArguments="scg:ICollection(x:String)">
+                                      <ArgumentValue x:TypeArguments="scg:ICollection(x:String)" ArgumentName="emaillist" />
+                                    </InArgument>
+                                  </p:GetItemFromCollection>
+                                </InArgument>
+                              </p:ConcatString>
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </p1:WriteToHistory.Message>
+                      </p1:WriteToHistory>
+                    </Sequence>
+                  </If.Then>
+                </If>
+                <p1:WriteToHistory Message="Email sent to Approver1" />
+                <p1:WriteToHistory Message="Deleting current item" />
+                <p1:DeleteListItem ItemGuid="{x:Null}">
+                  <p1:DeleteListItem.ItemId>
+                    <InArgument x:TypeArguments="x:Int32">
+                      <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+                        <p1:GetCurrentItemId />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                  </p1:DeleteListItem.ItemId>
+                  <p1:DeleteListItem.ListId>
+                    <InArgument x:TypeArguments="s:Guid">
+                      <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+                        <p1:GetCurrentListId />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                  </p1:DeleteListItem.ListId>
+                </p1:DeleteListItem>
+                <p1:WriteToHistory Message="Item has been deleted" />
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence>
+                <p1:WriteToHistory Message="In cancelStatus==cancel2" />
+                <If DisplayName="IsApproved">
+                  <If.Condition>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="RequestStatus == &quot;Approved&quot;">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="RequestStatus">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID1}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <p:IsEqualString Pattern="{x:Null}" Text="Approved">
+                          <p:IsEqualString.Input>
+                            <InArgument x:TypeArguments="x:String">
+                              <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestStatus" />
+                            </InArgument>
+                          </p:IsEqualString.Input>
+                        </p:IsEqualString>
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                  </If.Condition>
+                  <If.Then>
+                    <Sequence>
+                      <p1:WriteToHistory>
+                        <p1:WriteToHistory.Message>
+                          <InArgument x:TypeArguments="x:String">
+                            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Approved Request for Cancellation Email &quot; + RequestedByEmail">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="RequestedByEmail">
+                                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID16}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <p:ConcatString>
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Approved Request for Cancellation Email " />
+                                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByEmail" />
+                                </InArgument>
+                              </p:ConcatString>
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </p1:WriteToHistory.Message>
+                      </p1:WriteToHistory>
+                      <If DisplayName="If Approver1 Exists">
+                        <If.Condition>
+                          <InArgument x:TypeArguments="x:Boolean">
+                            <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="Approver1Id &gt; 0">
+                              <p:ExpressionContainerValue.Arguments>
+                                <InArgument x:TypeArguments="x:Int32" x:Key="Approver1Id">
+                                  <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID2}" />
+                                </InArgument>
+                              </p:ExpressionContainerValue.Arguments>
+                              <p:IsGreaterThan x:TypeArguments="x:Int32">
+                                <p:IsGreaterThan.Left>
+                                  <InArgument x:TypeArguments="x:Int32" EvaluationOrder="0">
+                                    <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="Approver1Id" />
+                                  </InArgument>
+                                </p:IsGreaterThan.Left>
+                                <p:IsGreaterThan.Right>
+                                  <InArgument x:TypeArguments="x:Int32" EvaluationOrder="1" Expression="0" />
+                                </p:IsGreaterThan.Right>
+                              </p:IsGreaterThan>
+                            </p:ExpressionContainerValue>
+                          </InArgument>
+                        </If.Condition>
+                        <If.Then>
+                          <Sequence>
+                            <p1:WriteToHistory Message="Approver1 Exists" />
+                            <p1:LookupSPUser DisplayName="LookupApprover1">
+                              <p1:LookupSPUser.PrincipalId>
+                                <InArgument x:TypeArguments="x:Int32">
+                                  <p:ExpressionContainerValue x:TypeArguments="x:Int32" DisplayName="Approver1Id">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="x:Int32" x:Key="Approver1Id">
+                                        <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID2}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="Approver1Id" />
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p1:LookupSPUser.PrincipalId>
+                              <p1:LookupSPUser.Result>
+                                <OutArgument x:TypeArguments="p:DynamicValue">
+                                  <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="dv_1">
+                                    <p:ExpressionContainerReference.Arguments>
+                                      <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="dv_1">
+                                        <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID18}" />
+                                      </InOutArgument>
+                                    </p:ExpressionContainerReference.Arguments>
+                                    <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="dv_1" />
+                                  </p:ExpressionContainerReference>
+                                </OutArgument>
+                              </p1:LookupSPUser.Result>
+                            </p1:LookupSPUser>
+                            <p:GetODataProperties DisplayName="GetApprover1">
+                              <p:GetODataProperties.Source>
+                                <InArgument x:TypeArguments="p:DynamicValue">
+                                  <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="dv_1">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="p:DynamicValue" x:Key="dv_1">
+                                        <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID18}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="dv_1" />
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p:GetODataProperties.Source>
+                              <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+                                <OutArgument x:TypeArguments="x:String" x:Key="Email">
+                                  <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="Approver1Email">
+                                    <p:ExpressionContainerReference.Arguments>
+                                      <InOutArgument x:TypeArguments="x:String" x:Key="Approver1Email">
+                                        <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID19}" />
+                                      </InOutArgument>
+                                    </p:ExpressionContainerReference.Arguments>
+                                    <ArgumentReference x:TypeArguments="x:String" ArgumentName="Approver1Email" />
+                                  </p:ExpressionContainerReference>
+                                </OutArgument>
+                                <OutArgument x:TypeArguments="x:String" x:Key="Title">
+                                  <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="Approver1Text">
+                                    <p:ExpressionContainerReference.Arguments>
+                                      <InOutArgument x:TypeArguments="x:String" x:Key="Approver1Text">
+                                        <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID20}" />
+                                      </InOutArgument>
+                                    </p:ExpressionContainerReference.Arguments>
+                                    <ArgumentReference x:TypeArguments="x:String" ArgumentName="Approver1Text" />
+                                  </p:ExpressionContainerReference>
+                                </OutArgument>
+                              </scg:Dictionary>
+                            </p:GetODataProperties>
+                            <p:BuildCollection x:TypeArguments="x:String">
+                              <p:BuildCollection.Result>
+                                <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                                  <p:ExpressionContainerReference x:TypeArguments="sco:Collection(x:String)" DisplayName="emaillist">
+                                    <p:ExpressionContainerReference.Arguments>
+                                      <InOutArgument x:TypeArguments="sco:Collection(x:String)" x:Key="emaillist">
+                                        <VariableReference x:TypeArguments="sco:Collection(x:String)" Variable="{x:Reference __ReferenceID21}" />
+                                      </InOutArgument>
+                                    </p:ExpressionContainerReference.Arguments>
+                                    <ArgumentReference x:TypeArguments="sco:Collection(x:String)" ArgumentName="emaillist" />
+                                  </p:ExpressionContainerReference>
+                                </OutArgument>
+                              </p:BuildCollection.Result>
+                              <p:BuildCollection.Values>
+                                <InArgument x:TypeArguments="x:String">
+                                  <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="Approver1Email">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="Approver1Email">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID19}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <ArgumentValue x:TypeArguments="x:String" ArgumentName="Approver1Email" />
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String">
+                                  <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="RequestedByEmail">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="RequestedByEmail">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID16}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByEmail" />
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p:BuildCollection.Values>
+                            </p:BuildCollection>
+                            <p1:WriteToHistory>
+                              <p1:WriteToHistory.Message>
+                                <InArgument x:TypeArguments="x:String">
+                                  <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Requester Email: &quot; +  RequestedByEmail +&quot;\n\n Approver1email: &quot;+ Approver1Email">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="RequestedByEmail">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID16}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="Approver1Email">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID19}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <p:ConcatString>
+                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                        <p:ConcatString>
+                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                            <p:ConcatString>
+                                              <p:ConcatString.Result>
+                                                <OutArgument x:TypeArguments="x:String" />
+                                              </p:ConcatString.Result>
+                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Requester Email: " />
+                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                                <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByEmail" />
+                                              </InArgument>
+                                            </p:ConcatString>
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA;&#xA; Approver1email: " />
+                                        </p:ConcatString>
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="Approver1Email" />
+                                      </InArgument>
+                                    </p:ConcatString>
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p1:WriteToHistory.Message>
+                            </p1:WriteToHistory>
+                            <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}" Subject="Time off request for Cancellation">
+                              <p1:Email.Body>
+                                <InArgument x:TypeArguments="x:String">
+                                  <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="RequestedByName + &quot; is requesting to cancel his Approved Time Off Request.\n Time off request details:\n Time off Type: &quot; + timeOffType + &quot;\n Start Date: &quot; + startDate.ToString() + &quot;\n End Date: &quot; + endDate.ToString() + &quot;\n\n To Proceed with Cancellation of the request, copy and paste the url below in your browser:\n\n&quot; + approverUrl.Replace(&quot;ApprovalForm.aspx&quot;, &quot;PendingRequestsApprover.aspx&quot;)">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="RequestedByName">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID17}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="timeOffType">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID12}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:Object" x:Key="startDate">
+                                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID9}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:Object" x:Key="endDate">
+                                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID10}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="approverUrl">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID11}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <p:ConcatString>
+                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                        <p:ConcatString>
+                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                            <p:ConcatString>
+                                              <p:ConcatString.Result>
+                                                <OutArgument x:TypeArguments="x:String" />
+                                              </p:ConcatString.Result>
+                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                <p:ConcatString>
+                                                  <p:ConcatString.Result>
+                                                    <OutArgument x:TypeArguments="x:String" />
+                                                  </p:ConcatString.Result>
+                                                  <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                    <p:ConcatString>
+                                                      <p:ConcatString.Result>
+                                                        <OutArgument x:TypeArguments="x:String" />
+                                                      </p:ConcatString.Result>
+                                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                        <p:ConcatString>
+                                                          <p:ConcatString.Result>
+                                                            <OutArgument x:TypeArguments="x:String" />
+                                                          </p:ConcatString.Result>
+                                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                            <p:ConcatString>
+                                                              <p:ConcatString.Result>
+                                                                <OutArgument x:TypeArguments="x:String" />
+                                                              </p:ConcatString.Result>
+                                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                                <p:ConcatString>
+                                                                  <p:ConcatString.Result>
+                                                                    <OutArgument x:TypeArguments="x:String" />
+                                                                  </p:ConcatString.Result>
+                                                                  <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                                    <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByName" />
+                                                                  </InArgument>
+                                                                  <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression=" is requesting to cancel his Approved Time Off Request.&#xA; Time off request details:&#xA; Time off Type: " />
+                                                                </p:ConcatString>
+                                                              </InArgument>
+                                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                                                <ArgumentValue x:TypeArguments="x:String" ArgumentName="timeOffType" />
+                                                              </InArgument>
+                                                            </p:ConcatString>
+                                                          </InArgument>
+                                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA; Start Date: " />
+                                                        </p:ConcatString>
+                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                                        <p:ToString CultureName="{x:Null}" Format="{x:Null}">
+                                                          <p:ToString.Result>
+                                                            <OutArgument x:TypeArguments="x:String" />
+                                                          </p:ToString.Result>
+                                                          <InArgument x:TypeArguments="x:Object">
+                                                            <ArgumentValue x:TypeArguments="x:Object" ArgumentName="startDate" />
+                                                          </InArgument>
+                                                        </p:ToString>
+                                                      </InArgument>
+                                                    </p:ConcatString>
+                                                  </InArgument>
+                                                  <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA; End Date: " />
+                                                </p:ConcatString>
+                                              </InArgument>
+                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                                <p:ToString CultureName="{x:Null}" Format="{x:Null}">
+                                                  <p:ToString.Result>
+                                                    <OutArgument x:TypeArguments="x:String" />
+                                                  </p:ToString.Result>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <ArgumentValue x:TypeArguments="x:Object" ArgumentName="endDate" />
+                                                  </InArgument>
+                                                </p:ToString>
+                                              </InArgument>
+                                            </p:ConcatString>
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA;&#xA; To Proceed with Cancellation of the request, copy and paste the url below in your browser:&#xA;&#xA;" />
+                                        </p:ConcatString>
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                        <p:ReplaceString ExistingValue="ApprovalForm.aspx" Replacement="PendingRequestsApprover.aspx">
+                                          <p:ReplaceString.Input>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <ArgumentValue x:TypeArguments="x:String" ArgumentName="approverUrl" />
+                                            </InArgument>
+                                          </p:ReplaceString.Input>
+                                        </p:ReplaceString>
+                                      </InArgument>
+                                    </p:ConcatString>
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p1:Email.Body>
+                              <p1:Email.To>
+                                <InArgument x:TypeArguments="sco:Collection(x:String)">
+                                  <p:ExpressionContainerValue x:TypeArguments="sco:Collection(x:String)" DisplayName="emaillist">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="sco:Collection(x:String)" x:Key="emaillist">
+                                        <VariableValue x:TypeArguments="sco:Collection(x:String)" Variable="{x:Reference __ReferenceID21}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <ArgumentValue x:TypeArguments="sco:Collection(x:String)" ArgumentName="emaillist" />
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p1:Email.To>
+                            </p1:Email>
+                            <p1:WriteToHistory Message="Email has been sent to Approver1 with url. Approver1 has to cancel the Request by accessing Url given in the mail." />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Self Approved">
+                            <p1:WriteToHistory Message="Approver1 does not Exists" />
+                            <p:BuildCollection x:TypeArguments="x:String">
+                              <p:BuildCollection.Result>
+                                <OutArgument x:TypeArguments="sco:Collection(x:String)">
+                                  <p:ExpressionContainerReference x:TypeArguments="sco:Collection(x:String)" DisplayName="emaillist">
+                                    <p:ExpressionContainerReference.Arguments>
+                                      <InOutArgument x:TypeArguments="sco:Collection(x:String)" x:Key="emaillist">
+                                        <VariableReference x:TypeArguments="sco:Collection(x:String)" Variable="{x:Reference __ReferenceID21}" />
+                                      </InOutArgument>
+                                    </p:ExpressionContainerReference.Arguments>
+                                    <ArgumentReference x:TypeArguments="sco:Collection(x:String)" ArgumentName="emaillist" />
+                                  </p:ExpressionContainerReference>
+                                </OutArgument>
+                              </p:BuildCollection.Result>
+                              <p:BuildCollection.Values>
+                                <InArgument x:TypeArguments="x:String">
+                                  <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="RequestedByEmail">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="RequestedByEmail">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID16}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByEmail" />
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p:BuildCollection.Values>
+                            </p:BuildCollection>
+                            <p1:Email AdditionalHeaders="{x:Null}" BCC="{x:Null}" CC="{x:Null}" Subject="Time off request for Cancellation">
+                              <p1:Email.Body>
+                                <InArgument x:TypeArguments="x:String">
+                                  <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="RequestedByName +&quot; is requesting to cancel his Approved Time Off Request.\n Time off request details:\n Time off Type: &quot; + timeOffType + &quot;\n Start Date: &quot; + startDate.ToString() + &quot;\n End Date: &quot; + endDate.ToString()">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="RequestedByName">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID17}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="timeOffType">
+                                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID12}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:Object" x:Key="startDate">
+                                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID9}" />
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:Object" x:Key="endDate">
+                                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID10}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <p:ConcatString>
+                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                        <p:ConcatString>
+                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                            <p:ConcatString>
+                                              <p:ConcatString.Result>
+                                                <OutArgument x:TypeArguments="x:String" />
+                                              </p:ConcatString.Result>
+                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                <p:ConcatString>
+                                                  <p:ConcatString.Result>
+                                                    <OutArgument x:TypeArguments="x:String" />
+                                                  </p:ConcatString.Result>
+                                                  <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                    <p:ConcatString>
+                                                      <p:ConcatString.Result>
+                                                        <OutArgument x:TypeArguments="x:String" />
+                                                      </p:ConcatString.Result>
+                                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                        <p:ConcatString>
+                                                          <p:ConcatString.Result>
+                                                            <OutArgument x:TypeArguments="x:String" />
+                                                          </p:ConcatString.Result>
+                                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                                                            <ArgumentValue x:TypeArguments="x:String" ArgumentName="RequestedByName" />
+                                                          </InArgument>
+                                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression=" is requesting to cancel his Approved Time Off Request.&#xA; Time off request details:&#xA; Time off Type: " />
+                                                        </p:ConcatString>
+                                                      </InArgument>
+                                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="timeOffType" />
+                                                      </InArgument>
+                                                    </p:ConcatString>
+                                                  </InArgument>
+                                                  <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA; Start Date: " />
+                                                </p:ConcatString>
+                                              </InArgument>
+                                              <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                                <p:ToString CultureName="{x:Null}" Format="{x:Null}">
+                                                  <p:ToString.Result>
+                                                    <OutArgument x:TypeArguments="x:String" />
+                                                  </p:ToString.Result>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <ArgumentValue x:TypeArguments="x:Object" ArgumentName="startDate" />
+                                                  </InArgument>
+                                                </p:ToString>
+                                              </InArgument>
+                                            </p:ConcatString>
+                                          </InArgument>
+                                          <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="&#xA; End Date: " />
+                                        </p:ConcatString>
+                                      </InArgument>
+                                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                                        <p:ToString>
+                                          <InArgument x:TypeArguments="x:Object">
+                                            <ArgumentValue x:TypeArguments="x:Object" ArgumentName="endDate" />
+                                          </InArgument>
+                                        </p:ToString>
+                                      </InArgument>
+                                    </p:ConcatString>
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p1:Email.Body>
+                              <p1:Email.To>
+                                <InArgument x:TypeArguments="sco:Collection(x:String)">
+                                  <p:ExpressionContainerValue x:TypeArguments="sco:Collection(x:String)" DisplayName="emaillist">
+                                    <p:ExpressionContainerValue.Arguments>
+                                      <InArgument x:TypeArguments="sco:Collection(x:String)" x:Key="emaillist">
+                                        <VariableValue x:TypeArguments="sco:Collection(x:String)" Variable="{x:Reference __ReferenceID21}" />
+                                      </InArgument>
+                                    </p:ExpressionContainerValue.Arguments>
+                                    <ArgumentValue x:TypeArguments="sco:Collection(x:String)" ArgumentName="emaillist" />
+                                  </p:ExpressionContainerValue>
+                                </InArgument>
+                              </p1:Email.To>
+                            </p1:Email>
+                            <p1:WriteToHistory Message="Email Sent to Approver1 and Requestor" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </If.Then>
+                </If>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </If.Then>
+    </If>
+  </Sequence>
+</Activity>

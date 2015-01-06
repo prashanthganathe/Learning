@@ -1,0 +1,10 @@
+﻿<WorkflowAssociation xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>TimeOffRequest Approval Workflow - ItemAdded</Description>
+  <DisplayName>TimeOffRequest Approval Workflow - ItemAdded</DisplayName>
+  <Enabled>true</Enabled>
+  <EventSourceGUID>Lists/TimeOffRequests</EventSourceGUID>
+  <EventType>ItemAdded</EventType>
+  <HistoryListId>Lists/WorkflowHistoryList</HistoryListId>
+  <Id>ef6b7e25-35a8-4bf4-a7e8-5b11e4237617</Id>
+  <TaskListId>Lists/WorkflowTaskList</TaskListId>
+</WorkflowAssociation>

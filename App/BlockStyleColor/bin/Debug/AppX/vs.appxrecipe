@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MOTIFWORKS</Machine>
+    <WindowsUser>mw-inspiron-001</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>c7011926-54d3-4e97-9d97-86cbae6ff2a4</PackageIdentityName>
+    <IntermediateOutputPath>E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>1471961F7ED0D2A383AA9B6973CE9F650B3C0932671ACC7156306E3980F0D43E</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>c7011926-54d3-4e97-9d97-86cbae6ff2a4_1.1.0.0_neutral__e4qg5r7d1djqr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>c7011926-54d3-4e97-9d97-86cbae6ff2a4_e4qg5r7d1djqr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>c7011926-54d3-4e97-9d97-86cbae6ff2a4</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=mw-inspiron-001</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-08-14T05:01:13.061</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Windows8Theme.exe">
+      <PackagePath>Windows8Theme.exe</PackagePath>
+      <Modified>2014-08-26T10:56:40.653</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\packages\AWSSDK.2.1.6.0\lib\windows8\AWSSDK.dll">
+      <PackagePath>AWSSDK.dll</PackagePath>
+      <Modified>2014-08-08T04:46:19.070</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2014-08-08T04:46:19.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\AcquirerReport.png">
+      <PackagePath>Assets\AcquirerReport.png</PackagePath>
+      <Modified>2014-07-21T12:40:42.413</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Audience.png">
+      <PackagePath>Assets\Audience.png</PackagePath>
+      <Modified>2014-06-27T09:40:03.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\doctor.png">
+      <PackagePath>Assets\doctor.png</PackagePath>
+      <Modified>2014-06-27T09:43:50.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\download.png">
+      <PackagePath>Assets\download.png</PackagePath>
+      <Modified>2014-08-04T05:34:43.034</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\et-background.png">
+      <PackagePath>Assets\et-background.png</PackagePath>
+      <Modified>2012-03-20T12:30:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\carl30.png">
+      <PackagePath>Assets\Images\carl30.png</PackagePath>
+      <Modified>2014-07-28T05:30:35.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\splash.scale-100.png">
+      <PackagePath>Assets\Images\splash.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-07-28T05:36:35.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <Modified>2012-03-20T00:54:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\pie.png">
+      <PackagePath>Assets\pie.png</PackagePath>
+      <Modified>2014-07-22T05:51:47.952</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\reportqueue.png">
+      <PackagePath>Assets\reportqueue.png</PackagePath>
+      <Modified>2014-07-22T06:00:21.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\request.png">
+      <PackagePath>Assets\request.png</PackagePath>
+      <Modified>2014-07-22T05:52:44.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-07-28T05:30:35.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <Modified>2014-07-28T05:34:37.349</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-20T00:54:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2012-01-27T18:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2012-01-27T18:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2012-01-27T18:21:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\upload.png">
+      <PackagePath>Assets\upload.png</PackagePath>
+      <Modified>2014-07-29T11:47:21.111</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\user.png">
+      <PackagePath>Assets\user.png</PackagePath>
+      <Modified>2014-06-27T09:59:17.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\users.png">
+      <PackagePath>Assets\users.png</PackagePath>
+      <Modified>2014-07-25T06:54:00.523</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\wideLogo.png">
+      <PackagePath>Assets\wideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-10-31T11:29:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\BigLiveTile1.jpg">
+      <PackagePath>Assets\Images\BigLiveTile1.jpg</PackagePath>
+      <Modified>2012-10-31T10:22:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\BigLiveTile2.jpg">
+      <PackagePath>Assets\Images\BigLiveTile2.jpg</PackagePath>
+      <Modified>2012-10-31T10:22:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\carl150.jpg">
+      <PackagePath>Assets\Images\carl150.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-07-28T05:28:10.314</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\SmallLiveTile1.jpg">
+      <PackagePath>Assets\Images\SmallLiveTile1.jpg</PackagePath>
+      <Modified>2012-10-31T10:22:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\Images\SmallLiveTile2.jpg">
+      <PackagePath>Assets\Images\SmallLiveTile2.jpg</PackagePath>
+      <Modified>2012-10-31T10:22:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\left.jpg">
+      <PackagePath>Assets\left.jpg</PackagePath>
+      <Modified>2014-07-22T06:24:04.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\Assets\right.jpg">
+      <PackagePath>Assets\right.jpg</PackagePath>
+      <Modified>2014-07-22T06:24:04.139</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\IsolatedStorageW8.dll">
+      <PackagePath>IsolatedStorageW8.dll</PackagePath>
+      <Modified>2014-07-28T12:10:46.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcqRepList.xbf">
+      <PackagePath>AcqRepList.xbf</PackagePath>
+      <Modified>2014-08-11T10:33:25.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcquirerHome.xbf">
+      <PackagePath>AcquirerHome.xbf</PackagePath>
+      <Modified>2014-08-09T09:57:00.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+      <Modified>2014-08-09T09:57:00.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ExpertsResponse.xbf">
+      <PackagePath>ExpertsResponse.xbf</PackagePath>
+      <Modified>2014-08-11T06:49:07.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\PB.xbf">
+      <PackagePath>PB.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.717</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcqList.xbf">
+      <PackagePath>AcqList.xbf</PackagePath>
+      <Modified>2014-08-11T10:33:25.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\StatsNewDownload.xbf">
+      <PackagePath>StatsNewDownload.xbf</PackagePath>
+      <Modified>2014-08-09T09:57:00.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\StatsNew.xbf">
+      <PackagePath>StatsNew.xbf</PackagePath>
+      <Modified>2014-08-09T09:57:00.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Stats.xbf">
+      <PackagePath>Stats.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ReportQueue.xbf">
+      <PackagePath>ReportQueue.xbf</PackagePath>
+      <Modified>2014-08-11T10:33:25.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UploadImageTransferUtility.xbf">
+      <PackagePath>UploadImageTransferUtility.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UsersList.xbf">
+      <PackagePath>UsersList.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\RequestQueue.xbf">
+      <PackagePath>RequestQueue.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AcReport.xbf">
+      <PackagePath>AcReport.xbf</PackagePath>
+      <Modified>2014-08-11T10:06:52.113</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Response.xbf">
+      <PackagePath>Response.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ReportToAcq.xbf">
+      <PackagePath>ReportToAcq.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AddUser.xbf">
+      <PackagePath>AddUser.xbf</PackagePath>
+      <Modified>2014-08-08T12:07:44.983</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UploadImage.xbf">
+      <PackagePath>UploadImage.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ExpertHome.xbf">
+      <PackagePath>ExpertHome.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AudienceInfo.xbf">
+      <PackagePath>AudienceInfo.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\AdminHome.xbf">
+      <PackagePath>AdminHome.xbf</PackagePath>
+      <Modified>2014-08-08T12:00:44.644</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\ContactUs.xbf">
+      <PackagePath>SettingsFlyouts\ContactUs.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\UserList.xbf">
+      <PackagePath>UserList.xbf</PackagePath>
+      <Modified>2014-08-08T04:49:29.720</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\ItemSubPage.xbf">
+      <PackagePath>ItemSubPage.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\AboutUs.xbf">
+      <PackagePath>SettingsFlyouts\AboutUs.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\PrivacyPolicy.xbf">
+      <PackagePath>SettingsFlyouts\PrivacyPolicy.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\SettingsFlyouts\TermsAndConditions.xbf">
+      <PackagePath>SettingsFlyouts\TermsAndConditions.xbf</PackagePath>
+      <Modified>2014-08-07T07:13:50.563</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\Windows8Theme.xr.xml">
+      <PackagePath>Windows8Theme.xr.xml</PackagePath>
+      <Modified>2014-08-11T10:33:25.161</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\WindowsApps\WindowsApp\Metro\BlockStyleColor\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-08-14T05:01:12.210</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

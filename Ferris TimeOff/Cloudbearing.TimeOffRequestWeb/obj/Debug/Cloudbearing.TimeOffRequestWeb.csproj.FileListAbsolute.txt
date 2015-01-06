@@ -1,0 +1,61 @@
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.pdb
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.Edm.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.OData.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.IdentityModel.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.IdentityModel.Extensions.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Storage.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\System.Spatial.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Storage.xml
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\de\Microsoft.Data.OData.resources.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\en\Microsoft.IdentityModel.resources.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.csprojResolveAssemblyReference.cache
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.dll
+E:\SharepointApps\Ferris TimeOff\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.pdb
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.dll.config
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.pdb
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.Edm.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.OData.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.IdentityModel.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.IdentityModel.Extensions.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Storage.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\System.Spatial.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.Services.Client.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Newtonsoft.Json.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Storage.xml
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.Services.Client.xml
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\de\Microsoft.Data.OData.resources.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\en\Microsoft.IdentityModel.resources.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.dll
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.pdb
+E:\Backup Timeoff May 19\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.csprojResolveAssemblyReference.cache
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.dll.config
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Cloudbearing.TimeOffRequestWeb.pdb
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.Edm.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.OData.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.IdentityModel.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.IdentityModel.Extensions.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.Runtime.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Configuration.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Storage.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\System.Spatial.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.Services.Client.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Newtonsoft.Json.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.WindowsAzure.Storage.xml
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\Microsoft.Data.Services.Client.xml
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\de\Microsoft.Data.OData.resources.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\bin\en\Microsoft.IdentityModel.resources.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.dll
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.pdb
+E:\SharepointApps\Ferris TimeOff\Cloudbearing.TimeOffRequestWeb\obj\Debug\Cloudbearing.TimeOffRequestWeb.csprojResolveAssemblyReference.cache

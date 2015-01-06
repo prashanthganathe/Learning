@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="d566f5fc-4826-4725-b9d9-dfcb032242db" Scope="Web" Title="Cloudbearing.TimeOffRequest Feature2" Version="2.0.0.1">
+  <ElementManifests>
+    <ElementManifest Location="TimeOffTypesInstance\Elements.xml" />
+    <ElementManifest Location="TimeOffTypes\Elements.xml" />
+    <ElementFile Location="TimeOffTypes\Schema.xml" />
+    <ElementManifest Location="TimeOffRequestsInstance\Elements.xml" />
+    <ElementManifest Location="TimeOffRequests\Elements.xml" />
+    <ElementFile Location="TimeOffRequests\Schema.xml" />
+    <ElementManifest Location="ConfigListInstance\Elements.xml" />
+    <ElementManifest Location="ConfigList\Elements.xml" />
+    <ElementFile Location="ConfigList\Schema.xml" />
+    <ElementManifest Location="WorkflowHistoryList\Elements.xml" />
+    <ElementManifest Location="WorkflowTaskList\Elements.xml" />
+    <ElementManifest Location="OtherTimeOffDaysListInstance\Elements.xml" />
+    <ElementManifest Location="OtherTimeOffDaysList\Elements.xml" />
+    <ElementFile Location="OtherTimeOffDaysList\Schema.xml" />
+    <ElementManifest Location="DeptCalendarListInstance\Elements.xml" />
+    <ElementManifest Location="DeptCalendarList\Elements.xml" />
+    <ElementFile Location="DeptCalendarList\Schema.xml" />
+    <ElementManifest Location="HolidayListInstance\Elements.xml" />
+    <ElementManifest Location="HolidayList\Elements.xml" />
+    <ElementFile Location="HolidayList\Schema.xml" />
+    <ElementManifest Location="ErrorsInstance\Elements.xml" />
+    <ElementManifest Location="Errors\Elements.xml" />
+    <ElementFile Location="Errors\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="TimeOffTypesInstance\Elements.xml" />
+        <ElementManifest Location="TimeOffTypes\Elements.xml" />
+        <ElementManifest Location="TimeOffRequestsInstance\Elements.xml" />
+        <ElementManifest Location="TimeOffRequests\Elements.xml" />
+        <ElementManifest Location="ConfigListInstance\Elements.xml" />
+        <ElementManifest Location="ConfigList\Elements.xml" />
+        <ElementManifest Location="WorkflowHistoryList\Elements.xml" />
+        <ElementManifest Location="WorkflowTaskList\Elements.xml" />
+        <ElementManifest Location="OtherTimeOffDaysListInstance\Elements.xml" />
+        <ElementManifest Location="OtherTimeOffDaysList\Elements.xml" />
+        <ElementManifest Location="DeptCalendarListInstance\Elements.xml" />
+        <ElementManifest Location="DeptCalendarList\Elements.xml" />
+        <ElementManifest Location="HolidayListInstance\Elements.xml" />
+        <ElementManifest Location="HolidayList\Elements.xml" />
+        <ElementManifest Location="ErrorsInstance\Elements.xml" />
+        <ElementManifest Location="Errors\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>
